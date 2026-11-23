@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; form-action 'self'">
+<title>First open-source builds for MSMEs — Open MSME</title>
+<meta name="description" content="The first 15 open-source tools being built for MSMEs in India and the Philippines, with build scope and repository names.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="First open-source builds for MSMEs — Open MSME">
+<meta property="og:description" content="The first 15 open-source tools being built for MSMEs in India and the Philippines, with build scope and repository names.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+<script src="assets/theme-init.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="index.html"><b>Open MSME</b><span class="tag">in &amp; ph</span></a>
+  <nav class="nav">
+    <a href="index.html">Catalog</a>
+    <a href="wave.html" aria-current="page">First wave</a>
+    <a href="about.html" class="hide-sm">About</a>
+    <a href="https://github.com/sreenivas-sadhu-prabhakara/openmsme" rel="noopener">Code</a>
+    <button class="themer" data-themer type="button" aria-label="Toggle theme">Theme</button>
+  </nav>
+</div></header>
+<main><div class="wrap">
+  <nav class="crumb"><a href="index.html">Catalog</a> &nbsp;/&nbsp; First wave</nav>
+  <header class="phead">
+    <span class="code">FIRST BUILD WAVE</span>
+    <h1>The first open-source builds for MSMEs</h1>
+    <p>These 15 tools go out ahead of the rest of the catalog — chosen to cover many sectors, favour fast-to-ship stacks, and solve the sharpest problems first. Each ships as its own open-source repository and its own explainer site. Status below is honest: the ones marked <b>Live</b> are released and usable today; the rest are still being built.</p>
+  </header>
+  <section class="wave-grid">
+<article class="wave-card" data-sector="MFG">
+    <div class="id">MSME-001 · Manufacturing &amp; engineering</div>
+    <h3>Job-Work ITC-04 Reconciler</h3>
+    <div class="repo">jobwork-itc04-reconciler</div>
+    <p class="brief">Go service: register inbound/outbound job-work challans per principal, run the 1yr/3yr deemed-supply aging clock, reconcile parts, and export portal-ready ITC-04 JSON.</p>
+    <p class="why"><b>Why first:</b> Rank-1 candidate and an instant-pay compliance pain: getting the deemed-supply deadline or the ITC-04 file wrong is a direct GST demand, and a spreadsheet literally cannot compute it. Go single-binary ships fast. Opens the MFG sector.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="MFG">
+    <div class="id">MSME-002 · Manufacturing &amp; engineering</div>
+    <h3>Machining Quote Calculator</h3>
+    <div class="repo"><a href="https://github.com/sreenivas-sadhu-prabhakara/machining-quote-calculator" rel="noopener">machining-quote-calculator</a></div>
+    <p class="brief">Zero-login static calculator: material + machine rate/hr + cycle/setup time + qty + scrap% + margin -&gt; per-piece price with transparent breakdown and printable PDF quote.</p>
+    <p class="why"><b>Why first:</b> Rank-2 and the fastest possible launch (static/S, offline, no backend). Turns a 20-minute gut guess into a 2-minute defensible quote every machine shop makes daily. Distinct from the ITC-04 reconciler so the two MFG tools don't overlap.</p>
+    <div class="meta"><span class="tagc">Static web app</span><a class="tagc link" href="https://sreenivas-sadhu-prabhakara.github.io/machining-quote-calculator/" rel="noopener">Open the tool &#8599;</a><span class="badge live">Live</span></div>
+  </article>
+<article class="wave-card" data-sector="TEX">
+    <div class="id">MSME-006 · Textiles, apparel &amp; handloom</div>
+    <h3>Textile Unit-Costing Calculator</h3>
+    <div class="repo"><a href="https://github.com/sreenivas-sadhu-prabhakara/fabric-saree-costing" rel="noopener">fabric-saree-costing</a></div>
+    <p class="brief">Static per-meter/per-piece costing: yarn count + warp/weft consumption + wastage% + job-work (dye/print/embroidery) + labour/overhead -&gt; true cost, break-even and margin bands.</p>
+    <p class="why"><b>Why first:</b> Rank-4; encodes the sector's real yarn-count-&gt;consumption cost model a blank spreadsheet can't, catching the wastage and job-work costs textile MSMEs always miss. Static = instant launch. Opens TEX.</p>
+    <div class="meta"><span class="tagc">Static web app</span><a class="tagc link" href="https://sreenivas-sadhu-prabhakara.github.io/fabric-saree-costing/" rel="noopener">Open the tool &#8599;</a><span class="badge live">Live</span></div>
+  </article>
+<article class="wave-card" data-sector="TEX">
+    <div class="id">MSME-007 · Textiles, apparel &amp; handloom</div>
+    <h3>Yarn Inventory by Count, Lot &amp; Shade</h3>
+    <div class="repo">yarn-inventory-count-lot</div>
+    <p class="brief">Go app: track yarn by count (e.g. 2/60s), colour/dye-lot and supplier; record issue/receipt, compute consumption against production, and alert on reorder points.</p>
+    <p class="why"><b>Why first:</b> Rank-5; models yarn the way the trade actually buys it (count + dye-lot) so shade continuity and reorder alerts work where generic stock apps fail. Functionally distinct from the TEX costing calc, justifying a second high-ranked TEX pick.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="FOOD">
+    <div class="id">MSME-008 · Food processing &amp; F&amp;B</div>
+    <h3>FSSAI License Navigator</h3>
+    <div class="repo">fssai-license-navigator</div>
+    <p class="brief">Go decision-tree: turnover + activity + capacity + states + export status -&gt; exact FSSAI licence tier, document checklist, govt fee, plus an expiry watchdog that nags before renewal.</p>
+    <p class="why"><b>Why first:</b> Rank-6; the gateway compliance step for every food business, replacing Rs 3-10k consultant guesswork and lapsed-licence penalties. The schedule-wise eligibility logic is beyond any spreadsheet. go/S launches quickly; opens FOOD.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="FOOD">
+    <div class="id">MSME-011 · Food processing &amp; F&amp;B</div>
+    <h3>Aggregator Payout Reconciler</h3>
+    <div class="repo">aggregator-payout-reconciler</div>
+    <p class="brief">Go reconciler: import the aggregator settlement CSV + order export, match order-by-order, flag commission/levy overcharges, and show true per-order and per-dish margin net of commission, packaging and GST/VAT.</p>
+    <p class="why"><b>Why first:</b> Rank-9; no incumbent shows net-of-everything margin, so it recovers the silent leakage every Swiggy/Zomato/foodpanda seller suffers. A money-recovery tool, functionally distinct from the FSSAI navigator, so the two FOOD picks don't overlap.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="RET">
+    <div class="id">MSME-015 · Retail, kirana &amp; distribution</div>
+    <h3>BoliKhata — Voice Credit Ledger</h3>
+    <div class="repo">bolikhata-voice-ledger</div>
+    <p class="brief">Offline-first Flutter app: owner taps once and speaks 'Ramu, 200, cooking oil' in Hindi/Tamil/Tagalog/Cebuano; on-device speech-to-text posts the credit-ledger entry and balances sync when signal returns.</p>
+    <p class="why"><b>Why first:</b> Rank-11 and the strongest open-source statement in the wave: the true OSS, offline-first, vernacular-voice answer to closed, data-locked Khatabook/OKCredit, so a non-typing owner actually keeps it current. Our single flutter pick, well under the 3-cap.</p>
+    <div class="meta"><span class="tagc">Flutter</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="RET">
+    <div class="id">MSME-016 · Retail, kirana &amp; distribution</div>
+    <h3>MarginMate — Landed Cost Calculator</h3>
+    <div class="repo"><a href="https://github.com/sreenivas-sadhu-prabhakara/marginmate-landed-cost" rel="noopener">marginmate-landed-cost</a></div>
+    <p class="brief">Static calculator: purchase price + scheme/free-goods + GST/VAT + freight -&gt; true landed cost, break-even price, and the margin% at any MRP/SRP.</p>
+    <p class="why"><b>Why first:</b> Rank-12; the single most-used decision a retailer makes, turned from guesswork into one screen. Static, used on every purchase, ships in days. Distinct from the voice ledger, so the two RET tools stay complementary.</p>
+    <div class="meta"><span class="tagc">Static web app</span><a class="tagc link" href="https://sreenivas-sadhu-prabhakara.github.io/marginmate-landed-cost/" rel="noopener">Open the tool &#8599;</a><span class="badge live">Live</span></div>
+  </article>
+<article class="wave-card" data-sector="LOG">
+    <div class="id">MSME-018 · Logistics &amp; warehousing</div>
+    <h3>Fleet Document Expiry Vault</h3>
+    <div class="repo">fleet-doc-expiry-vault</div>
+    <p class="brief">Go app: per-vehicle document locker with all expiry dates + scans, WhatsApp/SMS reminders at 30/15/3 days, a renewal checklist, and VAHAN/Parivahan/SARATHI deep-links.</p>
+    <p class="why"><b>Why first:</b> Rank-14 and explicitly flagged the single highest-ROI tool for a small fleet; automated multi-document, multi-vehicle expiry nudges are the whole value a spreadsheet or WhatsApp group can never deliver. Opens LOG.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="EXP">
+    <div class="id">MSME-022 · Exports &amp; trade compliance</div>
+    <h3>Export Price Builder (EXW to DDP)</h3>
+    <div class="repo"><a href="https://github.com/sreenivas-sadhu-prabhakara/export-price-builder" rel="noopener">export-price-builder</a></div>
+    <p class="brief">Static builder from ex-works cost up through inland haulage, THC, freight, insurance (CIF+10%), bank/LC charges and margin -&gt; the correct FOB/CFR/CIF/DDP number per Incoterm with a shareable breakdown.</p>
+    <p class="why"><b>Why first:</b> Rank-15; encodes the Incoterm logic and the CIF+10% insurance rule a spreadsheet hides, yielding a defensible itemized export quote in minutes. Static/S opens the high-value EXP sector with the fastest stack.</p>
+    <div class="meta"><span class="tagc">Static web app</span><a class="tagc link" href="https://sreenivas-sadhu-prabhakara.github.io/export-price-builder/" rel="noopener">Open the tool &#8599;</a><span class="badge live">Live</span></div>
+  </article>
+<article class="wave-card" data-sector="TAX">
+    <div class="id">MSME-027 · Accounting, GST/BIR &amp; compliance</div>
+    <h3>8% Flat vs Graduated-Rates Decision Tool (PH)</h3>
+    <div class="repo"><a href="https://github.com/sreenivas-sadhu-prabhakara/ph-8pct-vs-graduated" rel="noopener">ph-8pct-vs-graduated</a></div>
+    <p class="brief">Static PH tax tool: enter expected gross + expenses -&gt; total tax computed both ways (8% flat vs graduated), the breakeven, and a warning when nearing the P3M VAT threshold that kills the 8% option.</p>
+    <p class="why"><b>Why first:</b> Rank-19; resolves the single most common PH small-tax question in 30 seconds with the P3M trap built in. Static, no login, cheap-phone friendly - a fast, broad PH-market launch that balances the IN-heavy set and opens TAX.</p>
+    <div class="meta"><span class="tagc">Static web app</span><a class="tagc link" href="https://sreenivas-sadhu-prabhakara.github.io/ph-8pct-vs-graduated/" rel="noopener">Open the tool &#8599;</a><span class="badge live">Live</span></div>
+  </article>
+<article class="wave-card" data-sector="FIN">
+    <div class="id">MSME-033 · MSME finance &amp; payments</div>
+    <h3>GSTR-2B vs Purchase ITC Reconciler</h3>
+    <div class="repo">gstr2b-itc-reconciler</div>
+    <p class="brief">Go reconciler: upload GSTR-2B JSON + purchase register, match invoice-by-invoice, flag missing/mismatched ITC, total the blocked cash, and draft supplier follow-ups to recover it.</p>
+    <p class="why"><b>Why first:</b> Rank-22; recovers blocked ITC cash directly and does only this one job well, where full accounting suites bury it several menus deep. A different GST return/workflow from the job-work ITC-04 tool (not a near-duplicate); opens FIN.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="HLTH">
+    <div class="id">MSME-039 · Healthcare &amp; diagnostics SMEs</div>
+    <h3>Schedule H1 Sale Register</h3>
+    <div class="repo">schedule-h1-sale-register</div>
+    <p class="brief">Go single-binary: log each Schedule-H1 drug sale in the exact statutory field set (drug, batch, qty, prescriber reg-no, patient), enforce 3-year retention, and print the inspector-ready bound-register with search.</p>
+    <p class="why"><b>Why first:</b> Rank-28; this IS the legally mandated register, digitized - a spreadsheet can't enforce the H1 field set or reproduce the bound-register an inspector demands. High, immediate compliance stakes for every pharmacy; opens HLTH.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="EDU">
+    <div class="id">MSME-042 · Education &amp; skilling</div>
+    <h3>Verifiable Skill Certificate Issuer + Public Verify</h3>
+    <div class="repo">verifiable-cert-issuer</div>
+    <p class="brief">Go issuer: cryptographically signed certificates (QR + optional W3C Verifiable Credential) with a free public verify page that confirms authenticity, course and date without contacting the institute.</p>
+    <p class="why"><b>Why first:</b> Rank-30; beats a forgeable PDF and the 'call us to confirm' loop with instant, self-hostable, zero-per-certificate verification - a strong open-source wedge for training institutes. go keeps the flutter/java count low; opens EDU.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+<article class="wave-card" data-sector="SVC">
+    <div class="id">MSME-037 · Professional &amp; business services</div>
+    <h3>MSME 45-Day Payment Clock &amp; Samadhaan Builder</h3>
+    <div class="repo">msme-payment-clock-samadhaan</div>
+    <p class="brief">Go app: track each invoice's 45-day MSMED clock, auto-compute the accruing statutory interest, fire escalation notices, and assemble a ready-to-file MSME Samadhaan complaint packet.</p>
+    <p class="why"><b>Why first:</b> The chosen single representative of the flagship 43B(h)/45-day payment theme (the list's rank-3 idea, appearing 4x as 004/026/030/037); converts a legal right MSMEs rarely exercise into automatic collection money no incumbent SaaS encodes. This variant adds the Samadhaan filing output and covers SVC.</p>
+    <div class="meta"><span class="tagc">Go</span><span class="badge wave">Building</span></div>
+  </article>
+  </section>
+</div></main>
+<footer class="foot"><div class="wrap">
+  <span>Open MSME · open-source software for MSMEs in India &amp; the Philippines · MIT licensed</span>
+  <span><a href="about.html">About</a> · <a href="index.html">Catalog</a> · <a href="https://github.com/sreenivas-sadhu-prabhakara/openmsme" rel="noopener">Source</a></span>
+</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

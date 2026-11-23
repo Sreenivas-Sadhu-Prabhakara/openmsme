@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; form-action 'self'">
+<title>Open-source tools for MSME finance and payments — Open MSME</title>
+<meta name="description" content="31 free, open-source software tools for msme finance &amp; payments MSMEs in India and the Philippines.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Open-source tools for MSME finance and payments — Open MSME">
+<meta property="og:description" content="31 free, open-source software tools for msme finance &amp; payments MSMEs in India and the Philippines.">
+<meta property="og:type" content="website">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
+<script src="../assets/theme-init.js"></script>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="../index.html"><b>Open MSME</b><span class="tag">in &amp; ph</span></a>
+  <nav class="nav">
+    <a href="../index.html" aria-current="page">Catalog</a>
+    <a href="../wave.html">First wave</a>
+    <a href="../about.html" class="hide-sm">About</a>
+    <a href="https://github.com/sreenivas-sadhu-prabhakara/openmsme" rel="noopener">Code</a>
+    <button class="themer" data-themer type="button" aria-label="Toggle theme">Theme</button>
+  </nav>
+</div></header>
+<main><div class="wrap">
+  <nav class="crumb"><a href="../index.html">Catalog</a> &nbsp;/&nbsp; MSME finance &amp; payments</nav>
+  <header class="phead" data-sector="FIN">
+    <span class="code">FIN · MSME finance &amp; payments</span>
+    <h1>Open-source tools for MSME finance and payments</h1>
+    <p>Working capital, reconciliation and payment-rule tools built around how small-business money actually moves.</p>
+  </header>
+
+  <div class="toolbar">
+    <input class="search" data-search type="search" placeholder="Search 31 tools in this sector…" aria-label="Search tools">
+    <div class="filters"><button class="chip-btn" data-filter="all" aria-pressed="true" type="button">All 31</button><button class="chip-btn" data-filter="wave" aria-pressed="false" type="button">First wave 1</button><button class="chip-btn" data-filter="go" aria-pressed="false" type="button">Go</button><button class="chip-btn" data-filter="flutter" aria-pressed="false" type="button">Flutter</button><button class="chip-btn" data-filter="static" aria-pressed="false" type="button">Static web app</button></div>
+  </div>
+  <p class="showing"><span data-count>31</span> of 31 shown</p>
+
+  <section class="ideas" data-ideas>
+<article class="idea" data-idea data-text="msme 45-day payment clock (sec 43b(h)) under income tax sec 43b(h) (effective fy2024-25) a buyer can only deduct a purchase from a registered micro/small supplier if it is paid within 45 days (15 if no written agreement). msmes don&#39;t know which invoices give them this statutory leverage, and buyers don&#39;t track exposure. udyam-registered micro/small suppliers and their accountants upload the invoice register + udyam status; the tool runs the 45/15-day clock per invoice, flags invoices about to trip the buyer&#39;s deduction, and auto-drafts a buyer-facing nudge citing 43b(h) plus the msmed act compound interest (3x bank rate). income tax 43b(h); msmed act 2006 sec 15/16; udyam" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-030</span>
+    <h3>MSME 45-Day Payment Clock (Sec 43B(h))</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Under Income Tax Sec 43B(h) (effective FY2024-25) a buyer can only deduct a purchase from a registered micro/small supplier if it is paid within 45 days (15 if no written agreement). MSMEs don't know which invoices give them this statutory leverage, and buyers don't track exposure.</p><p><b>Who it helps.</b> Udyam-registered micro/small suppliers and their accountants</p><p><b>What it does.</b> Upload the invoice register + Udyam status; the tool runs the 45/15-day clock per invoice, flags invoices about to trip the buyer's deduction, and auto-drafts a buyer-facing nudge citing 43B(h) plus the MSMED Act compound interest (3x bank rate).</p><p><b>Regulation.</b> Income Tax 43B(h); MSMED Act 2006 Sec 15/16; Udyam</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="gstr-2b vs purchase itc reconciler msmes silently lose input tax credit (real cash) when suppliers don&#39;t file or file wrong, and mismatches between gstr-2b and the purchase register go unnoticed until too late. gst-registered msmes and their accountants upload gstr-2b json + the purchase register; the tool matches invoice-by-invoice, flags missing or mismatched itc, totals the blocked cash, and drafts supplier follow-ups to recover it. gst itc rules sec 16; gstr-2b / gstr-3b" data-tags="|go|wave|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-033</span>
+    <h3>GSTR-2B vs Purchase ITC Reconciler</h3>
+    <span class="badge wave">First wave</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSMEs silently lose input tax credit (real cash) when suppliers don't file or file wrong, and mismatches between GSTR-2B and the purchase register go unnoticed until too late.</p><p><b>Who it helps.</b> GST-registered MSMEs and their accountants</p><p><b>What it does.</b> Upload GSTR-2B JSON + the purchase register; the tool matches invoice-by-invoice, flags missing or mismatched ITC, totals the blocked cash, and drafts supplier follow-ups to recover it.</p><p><b>Regulation.</b> GST ITC rules Sec 16; GSTR-2B / GSTR-3B</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="rule 37 180-day itc-reversal guard if you don&#39;t pay a supplier within 180 days of their invoice, the itc you already claimed must be reversed with interest. buyers forget, get caught in audit, and pay interest and penalty on credits they&#39;d already used, a different law and threshold from the 43b(h) 45-day supplier rule. gst-registered msmes that claim itc on credit purchases ingest the purchase register plus payments made; per invoice it runs the 180-day clock from invoice date, nets part-payments, flags invoices nearing day 180 with the itc at risk and the interest if missed, and either prompts a payment or stages the exact reversal entry (and re-claim once paid). cgst rule 37; sec 16(2) second proviso (180-day payment condition)" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-664</span>
+    <h3>Rule 37 180-Day ITC-Reversal Guard</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> If you don't pay a supplier within 180 days of their invoice, the ITC you already claimed must be reversed with interest. Buyers forget, get caught in audit, and pay interest and penalty on credits they'd already used, a different law and threshold from the 43B(h) 45-day supplier rule.</p><p><b>Who it helps.</b> GST-registered MSMEs that claim ITC on credit purchases</p><p><b>What it does.</b> Ingest the purchase register plus payments made; per invoice it runs the 180-day clock from invoice date, nets part-payments, flags invoices nearing day 180 with the ITC at risk and the interest if missed, and either prompts a payment or stages the exact reversal entry (and re-claim once paid).</p><p><b>Regulation.</b> CGST Rule 37; Sec 16(2) second proviso (180-day payment condition)</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="13-week cash-flow forecaster msmes run on the current bank balance and have no rolling short-term liquidity view, so a predictable crunch still arrives as a surprise. owner-operators and part-time bookkeepers import a bank statement csv plus known receivables/payables; it builds a rolling 13-week cash projection with low-balance alerts and best/worst-case scenario toggles. none specific" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-209</span>
+    <h3>13-Week Cash-Flow Forecaster</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSMEs run on the current bank balance and have no rolling short-term liquidity view, so a predictable crunch still arrives as a surprise.</p><p><b>Who it helps.</b> Owner-operators and part-time bookkeepers</p><p><b>What it does.</b> Import a bank statement CSV plus known receivables/payables; it builds a rolling 13-week cash projection with low-balance alerts and best/worst-case scenario toggles.</p><p><b>Regulation.</b> None specific</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="whatsapp collections sequencer overdue invoices get chased one ad-hoc message at a time with no escalation discipline and no record of what was said. msmes with recurring b2b customers define a dunning ladder (polite to firm to final); it schedules per-invoice whatsapp/sms copy with an embedded upi pay-link and captures a promise-to-pay, tracking state per invoice. npci upi intent; trai commercial-communication norms" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-210</span>
+    <h3>WhatsApp Collections Sequencer</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Overdue invoices get chased one ad-hoc message at a time with no escalation discipline and no record of what was said.</p><p><b>Who it helps.</b> MSMEs with recurring B2B customers</p><p><b>What it does.</b> Define a dunning ladder (polite to firm to final); it schedules per-invoice WhatsApp/SMS copy with an embedded UPI pay-link and captures a promise-to-pay, tracking state per invoice.</p><p><b>Regulation.</b> NPCI UPI intent; TRAI commercial-communication norms</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="paluwagan (rosca) manager paluwagan rotating-savings circles run on a notebook and trust; missed turns, unclear payout order and disputes are routine. co-worker and barkada savings circles, sari-sari networks create a circle, set the contribution and payout order, track who paid each cycle, fire gcash collect reminders, and keep a shared immutable ledger every member can see. bsp (framed as non-deposit-taking informal savings); data privacy act" data-tags="|flutter|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-211</span>
+    <h3>Paluwagan (ROSCA) Manager</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Paluwagan rotating-savings circles run on a notebook and trust; missed turns, unclear payout order and disputes are routine.</p><p><b>Who it helps.</b> Co-worker and barkada savings circles, sari-sari networks</p><p><b>What it does.</b> Create a circle, set the contribution and payout order, track who paid each cycle, fire GCash collect reminders, and keep a shared immutable ledger every member can see.</p><p><b>Regulation.</b> BSP (framed as non-deposit-taking informal savings); Data Privacy Act</p></div>
+  <div class="meta"><span class="tagc">Philippines</span><span class="tagc">Flutter</span></div>
+</article>
+<article class="idea" data-idea data-text="udyam loan-scheme matcher micro entrepreneurs don&#39;t know which government credit scheme (mudra, cgtmse, pmegp, stand-up india) fits their case, so they rely on paid middlemen. micro entrepreneurs and first-time borrowers a static wizard: udyam category + sector + loan purpose + amount returns a ranked list of eligible schemes with limits, subsidy, collateral rules and a document checklist. udyam; mudra; cgtmse; pmegp; stand-up india" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-212</span>
+    <h3>Udyam Loan-Scheme Matcher</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Micro entrepreneurs don't know which government credit scheme (MUDRA, CGTMSE, PMEGP, Stand-Up India) fits their case, so they rely on paid middlemen.</p><p><b>Who it helps.</b> Micro entrepreneurs and first-time borrowers</p><p><b>What it does.</b> A static wizard: Udyam category + sector + loan purpose + amount returns a ranked list of eligible schemes with limits, subsidy, collateral rules and a document checklist.</p><p><b>Regulation.</b> Udyam; MUDRA; CGTMSE; PMEGP; Stand-Up India</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="flat-vs-reducing apr exposer lenders quote flat rates and comfortable emis, so msmes cannot see the true effective cost of a loan, bnpl plan or advance. any msme comparing loan or financing offers enter principal, tenor and the flat rate or emi; it computes the true reducing-balance apr, total interest and a full amortization table, and compares offers side by side. rbi fair-lending / apr disclosure norms (in); bsp truth in lending act (ph)" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-213</span>
+    <h3>Flat-vs-Reducing APR Exposer</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Lenders quote flat rates and comfortable EMIs, so MSMEs cannot see the true effective cost of a loan, BNPL plan or advance.</p><p><b>Who it helps.</b> Any MSME comparing loan or financing offers</p><p><b>What it does.</b> Enter principal, tenor and the flat rate or EMI; it computes the true reducing-balance APR, total interest and a full amortization table, and compares offers side by side.</p><p><b>Regulation.</b> RBI fair-lending / APR disclosure norms (IN); BSP Truth in Lending Act (PH)</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="bir 2307 withholding tracker ph businesses receive creditable-withholding certificates (bir form 2307) from corporate customers; a missing cert means a lost tax credit, i.e. lost cash at filing. ph msmes and freelancers billing corporates log each 2307 expected and received per customer and period, reconcile them against the sales that should have generated them, and alert on missing certificates before the quarterly filing deadline. bir creditable withholding tax; form 2307; quarterly itr" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-215</span>
+    <h3>BIR 2307 Withholding Tracker</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> PH businesses receive creditable-withholding certificates (BIR Form 2307) from corporate customers; a missing cert means a lost tax credit, i.e. lost cash at filing.</p><p><b>Who it helps.</b> PH MSMEs and freelancers billing corporates</p><p><b>What it does.</b> Log each 2307 expected and received per customer and period, reconcile them against the sales that should have generated them, and alert on missing certificates before the quarterly filing deadline.</p><p><b>Regulation.</b> BIR creditable withholding tax; Form 2307; quarterly ITR</p></div>
+  <div class="meta"><span class="tagc">Philippines</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="invoice with embedded upi/gcash pay button msmes email a pdf invoice and the customer then has to hunt for how to pay, adding days of delay. freelancers and small b2b service firms generate a clean web + pdf invoice with a live upi deep-link (in) or gcash / qr ph pay button (ph) and a reference that ties the payment back for reconciliation. npci upi intent (in); bsp qr ph standard (ph)" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-216</span>
+    <h3>Invoice with Embedded UPI/GCash Pay Button</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSMEs email a PDF invoice and the customer then has to hunt for how to pay, adding days of delay.</p><p><b>Who it helps.</b> Freelancers and small B2B service firms</p><p><b>What it does.</b> Generate a clean web + PDF invoice with a live UPI deep-link (IN) or GCash / QR Ph pay button (PH) and a reference that ties the payment back for reconciliation.</p><p><b>Regulation.</b> NPCI UPI intent (IN); BSP QR Ph standard (PH)</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="dso &amp; receivables aging tracker msmes cannot see which customers are strangling their cash because aging lives in a fragile spreadsheet pivot. owner-operators and bookkeepers import invoices; it computes days sales outstanding, aging buckets, worst-offender customers and the trend, with one-click export of the overdue list for collections. none specific" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-217</span>
+    <h3>DSO &amp; Receivables Aging Tracker</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSMEs cannot see which customers are strangling their cash because aging lives in a fragile spreadsheet pivot.</p><p><b>Who it helps.</b> Owner-operators and bookkeepers</p><p><b>What it does.</b> Import invoices; it computes Days Sales Outstanding, aging buckets, worst-offender customers and the trend, with one-click export of the overdue list for collections.</p><p><b>Regulation.</b> None specific</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="sari-sari utang (store-credit) ledger sari-sari stores extend utang (store credit) tracked in a notebook, so limits are fuzzy and bad debts quietly pile up. sari-sari store owners a per-customer utang ledger with credit-limit flags, gcash collect-request reminders, receivables aging and a &#39;safe to extend?&#39; indicator at the counter. bsp e-money (collection only); data privacy act" data-tags="|flutter|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-219</span>
+    <h3>Sari-Sari Utang (Store-Credit) Ledger</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Sari-sari stores extend utang (store credit) tracked in a notebook, so limits are fuzzy and bad debts quietly pile up.</p><p><b>Who it helps.</b> Sari-sari store owners</p><p><b>What it does.</b> A per-customer utang ledger with credit-limit flags, GCash collect-request reminders, receivables aging and a 'safe to extend?' indicator at the counter.</p><p><b>Regulation.</b> BSP e-money (collection only); Data Privacy Act</p></div>
+  <div class="meta"><span class="tagc">Philippines</span><span class="tagc">Flutter</span></div>
+</article>
+<article class="idea" data-idea data-text="merchant-advance/bnpl true-cost decoder revenue-based advances and merchant bnpl hide their price behind factor rates and daily holdbacks, so msmes can&#39;t judge how expensive they really are. msmes offered merchant cash advance or revenue-based financing enter the advance amount, factor rate, holdback % and expected daily sales; it returns the effective apr, the payback date and a cash-flow-drag simulation. rbi lending disclosure (in); bsp truth in lending (ph)" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-220</span>
+    <h3>Merchant-Advance/BNPL True-Cost Decoder</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Revenue-based advances and merchant BNPL hide their price behind factor rates and daily holdbacks, so MSMEs can't judge how expensive they really are.</p><p><b>Who it helps.</b> MSMEs offered merchant cash advance or revenue-based financing</p><p><b>What it does.</b> Enter the advance amount, factor rate, holdback % and expected daily sales; it returns the effective APR, the payback date and a cash-flow-drag simulation.</p><p><b>Regulation.</b> RBI lending disclosure (IN); BSP Truth in Lending (PH)</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="upi/gcash statement categorizer msmes burn hours categorizing bank, upi and gcash transactions into income/expense heads for books and tax. bookkeepers and owner-operators import a bank/upi/gcash csv; rules plus fuzzy matching auto-categorize transactions, learn from each correction, and export to a standard accounting format. none specific" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-221</span>
+    <h3>UPI/GCash Statement Categorizer</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSMEs burn hours categorizing bank, UPI and GCash transactions into income/expense heads for books and tax.</p><p><b>Who it helps.</b> Bookkeepers and owner-operators</p><p><b>What it does.</b> Import a bank/UPI/GCash CSV; rules plus fuzzy matching auto-categorize transactions, learn from each correction, and export to a standard accounting format.</p><p><b>Regulation.</b> None specific</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="composition vs regular tax decider small businesses can&#39;t tell whether the gst composition scheme (in) or percentage-tax-vs-vat (ph) would save them money, a high-leverage choice made blindly. sub-threshold small businesses and new registrants enter turnover, b2b-vs-b2c buyer mix and input costs; it compares net tax and lost input credit between composition and regular (in) or 3% percentage tax and 12% vat (ph) and recommends. gst composition scheme (in); bir percentage tax vs vat (ph)" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-225</span>
+    <h3>Composition vs Regular Tax Decider</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Small businesses can't tell whether the GST Composition Scheme (IN) or percentage-tax-vs-VAT (PH) would save them money, a high-leverage choice made blindly.</p><p><b>Who it helps.</b> Sub-threshold small businesses and new registrants</p><p><b>What it does.</b> Enter turnover, B2B-vs-B2C buyer mix and input costs; it compares net tax and lost input credit between Composition and Regular (IN) or 3% percentage tax and 12% VAT (PH) and recommends.</p><p><b>Regulation.</b> GST Composition Scheme (IN); BIR percentage tax vs VAT (PH)</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="payment-gateway settlement reconciler gateways settle on t+1/t+2 net of mdr, gst-on-fees, refunds and chargebacks, in batches that never line up 1:1 with orders. owners can&#39;t tell if they were actually paid for each order, or spot a short-settled or held payout. online sellers and d2c/service msmes collecting via razorpay/cashfree/payu (in) or paymongo/xendit/maya (ph) import the gateway settlement/payout report plus the order export; it matches payout lines to orders, reconstructs each order&#39;s fee/tax/refund/chargeback, flags unsettled, short-settled, held and double-refunded transactions, and books the net to a bank-ready journal with the mdr and gst-on-mdr split out for itc. rbi payment aggregator/pg guidelines (in); bsp operations of payment systems rules (ph)" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-665</span>
+    <h3>Payment-Gateway Settlement Reconciler</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Gateways settle on T+1/T+2 net of MDR, GST-on-fees, refunds and chargebacks, in batches that never line up 1:1 with orders. Owners can't tell if they were actually paid for each order, or spot a short-settled or held payout.</p><p><b>Who it helps.</b> Online sellers and D2C/service MSMEs collecting via Razorpay/Cashfree/PayU (IN) or PayMongo/Xendit/Maya (PH)</p><p><b>What it does.</b> Import the gateway settlement/payout report plus the order export; it matches payout lines to orders, reconstructs each order's fee/tax/refund/chargeback, flags unsettled, short-settled, held and double-refunded transactions, and books the net to a bank-ready journal with the MDR and GST-on-MDR split out for ITC.</p><p><b>Regulation.</b> RBI Payment Aggregator/PG Guidelines (IN); BSP Operations of Payment Systems rules (PH)</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="pdc &amp; cheque register with deposit scheduler post-dated cheques pile up in a drawer; owners miss deposit dates, deposit too early and get a dishonour, or lose track of which issued pdc will hit the bank and sink the balance. b2b msmes that still receive and issue post-dated cheques (traders, distributors, contractors) log every pdc received and issued (party, bank, cheque no., amount, due date); it builds a deposit calendar, warns before an issued cheque will overdraw the account, tracks clearance/bounce status, and on a bounce pre-fills the sec 138 / bp 22 notice timeline and hands off to litigation tracking. negotiable instruments act sec 138 (in); batas pambansa blg. 22 (ph)" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-666</span>
+    <h3>PDC &amp; Cheque Register with Deposit Scheduler</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Post-dated cheques pile up in a drawer; owners miss deposit dates, deposit too early and get a dishonour, or lose track of which issued PDC will hit the bank and sink the balance.</p><p><b>Who it helps.</b> B2B MSMEs that still receive and issue post-dated cheques (traders, distributors, contractors)</p><p><b>What it does.</b> Log every PDC received and issued (party, bank, cheque no., amount, due date); it builds a deposit calendar, warns before an issued cheque will overdraw the account, tracks clearance/bounce status, and on a bounce pre-fills the Sec 138 / BP 22 notice timeline and hands off to litigation tracking.</p><p><b>Regulation.</b> Negotiable Instruments Act Sec 138 (IN); Batas Pambansa Blg. 22 (PH)</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="cma data builder (bank working-capital / term-loan) banks demand cma (credit monitoring arrangement) data, audited past plus projected financials, ratios and an mpbf working-capital assessment, in a rigid format. msmes pay consultants 5,000 to 25,000 per file or get rejected for a sloppy one. msmes applying for or renewing a bank cc/od or term loan, and the consultants who prepare their files guided entry of 2-3 past years plus projections generates the standard cma forms (operating statement, balance-sheet analysis, comparative current assets/liabilities, mpbf, fund-flow, ratios), auto-computes mpbf (tandon/nayak method ii), current ratio, dscr and tol/tnw, and exports a bank-ready workbook plus pdf. rbi cma / maximum permissible bank finance (tandon-nayak norms)" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-667</span>
+    <h3>CMA Data Builder (bank working-capital / term-loan)</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Banks demand CMA (Credit Monitoring Arrangement) data, audited past plus projected financials, ratios and an MPBF working-capital assessment, in a rigid format. MSMEs pay consultants 5,000 to 25,000 per file or get rejected for a sloppy one.</p><p><b>Who it helps.</b> MSMEs applying for or renewing a bank CC/OD or term loan, and the consultants who prepare their files</p><p><b>What it does.</b> Guided entry of 2-3 past years plus projections generates the standard CMA Forms (operating statement, balance-sheet analysis, comparative current assets/liabilities, MPBF, fund-flow, ratios), auto-computes MPBF (Tandon/Nayak Method II), current ratio, DSCR and TOL/TNW, and exports a bank-ready workbook plus PDF.</p><p><b>Regulation.</b> RBI CMA / Maximum Permissible Bank Finance (Tandon-Nayak norms)</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="drawing power &amp; monthly stock-statement generator cc/od borrowers must submit a monthly stock and book-debt statement; drawing power is (paid stock + eligible debtors - creditors) less the bank&#39;s margin. get it wrong and the account is flagged irregular; do it by hand monthly and it eats a day. msmes running a cash-credit (cc) or overdraft limit against stock and book debts enter or import stock, debtors (with aging cut-off) and creditors; it applies the sanction&#39;s margins, excludes slow/over-90-day debtors and unpaid stock, computes drawing power vs sanctioned limit, warns if utilisation will breach dp, and prints the bank&#39;s stock-statement format. rbi cash-credit drawing-power / stock &amp; book-debt statement norms" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-668</span>
+    <h3>Drawing Power &amp; Monthly Stock-Statement Generator</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> CC/OD borrowers must submit a monthly stock and book-debt statement; drawing power is (paid stock + eligible debtors - creditors) less the bank's margin. Get it wrong and the account is flagged irregular; do it by hand monthly and it eats a day.</p><p><b>Who it helps.</b> MSMEs running a cash-credit (CC) or overdraft limit against stock and book debts</p><p><b>What it does.</b> Enter or import stock, debtors (with aging cut-off) and creditors; it applies the sanction's margins, excludes slow/over-90-day debtors and unpaid stock, computes drawing power vs sanctioned limit, warns if utilisation will breach DP, and prints the bank's stock-statement format.</p><p><b>Regulation.</b> RBI cash-credit drawing-power / stock &amp; book-debt statement norms</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="msme multi-loan debt-stack &amp; payoff planner with 4-5 borrowings at different rates and emis, owners don&#39;t know their true blended cost, which loan to kill first, or whether a prepayment or refinance actually helps after foreclosure charges. owner-operators juggling several loans (term loan, cc, equipment finance, gold loan, business bnpl, informal) enter every loan (principal, rate, emi, tenor, foreclosure terms); it shows blended apr and total interest outgo, ranks payoff by avalanche vs snowball, simulates a lump-sum prepayment or a consolidation/refinance offer net of foreclosure charges, and gives a month-by-month payoff plan. " data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-669</span>
+    <h3>MSME Multi-Loan Debt-Stack &amp; Payoff Planner</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> With 4-5 borrowings at different rates and EMIs, owners don't know their true blended cost, which loan to kill first, or whether a prepayment or refinance actually helps after foreclosure charges.</p><p><b>Who it helps.</b> Owner-operators juggling several loans (term loan, CC, equipment finance, gold loan, business BNPL, informal)</p><p><b>What it does.</b> Enter every loan (principal, rate, EMI, tenor, foreclosure terms); it shows blended APR and total interest outgo, ranks payoff by avalanche vs snowball, simulates a lump-sum prepayment or a consolidation/refinance offer net of foreclosure charges, and gives a month-by-month payoff plan.</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="inward-remittance channel cost comparator the same $2,000 from a foreign client lands as wildly different amounts via swift bank wire vs wise vs paypal vs payoneer, through hidden fx markup, flat fees, gst on forex and purpose-code friction, yet nobody compares before sharing payment details. freelancers, it/service exporters and small exporters receiving foreign-currency payments enter amount, currency and corridor; it computes the true landed amount on each channel (mid-market rate minus each provider&#39;s fx markup, plus fixed/percentage fees and, for india, gst on forex plus likely firc/ebrc availability for the gst export refund), ranks them, and generates the payment instructions to send the client. fema purpose codes / firc-ebrc (in); bsp inward-remittance rules (ph)" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-670</span>
+    <h3>Inward-Remittance Channel Cost Comparator</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> The same $2,000 from a foreign client lands as wildly different amounts via SWIFT bank wire vs Wise vs PayPal vs Payoneer, through hidden FX markup, flat fees, GST on forex and purpose-code friction, yet nobody compares before sharing payment details.</p><p><b>Who it helps.</b> Freelancers, IT/service exporters and small exporters receiving foreign-currency payments</p><p><b>What it does.</b> Enter amount, currency and corridor; it computes the true landed amount on each channel (mid-market rate minus each provider's FX markup, plus fixed/percentage fees and, for India, GST on forex plus likely FIRC/eBRC availability for the GST export refund), ranks them, and generates the payment instructions to send the client.</p><p><b>Regulation.</b> FEMA purpose codes / FIRC-eBRC (IN); BSP inward-remittance rules (PH)</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="ph msme loan-program &amp; microfinance matcher ph micro-entrepreneurs don&#39;t know which public and microfinance options they qualify for, dti p3 (pondo sa pagbabago), sb corp, landbank/dbp msme windows, rsbsa-linked agri credit or an accredited mfi, and default to 5-6 informal lenders at punishing rates. philippine micro and small entrepreneurs seeking formal credit a wizard: business type, dti/bmbe status, location, years operating, amount and purpose returns a ranked list of eligible programs with ceilings, rates, collateral-free limits, required documents and the office/mfi to approach, plus the true-cost gap vs the 5-6 lender they&#39;d otherwise use. ra 6977/9501 (magna carta for msmes); dti p3 &amp; sb corp program rules; bmbe act (ra 9178)" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-671</span>
+    <h3>PH MSME Loan-Program &amp; Microfinance Matcher</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> PH micro-entrepreneurs don't know which public and microfinance options they qualify for, DTI P3 (Pondo sa Pagbabago), SB Corp, LANDBANK/DBP MSME windows, RSBSA-linked agri credit or an accredited MFI, and default to 5-6 informal lenders at punishing rates.</p><p><b>Who it helps.</b> Philippine micro and small entrepreneurs seeking formal credit</p><p><b>What it does.</b> A wizard: business type, DTI/BMBE status, location, years operating, amount and purpose returns a ranked list of eligible programs with ceilings, rates, collateral-free limits, required documents and the office/MFI to approach, plus the true-cost gap vs the 5-6 lender they'd otherwise use.</p><p><b>Regulation.</b> RA 6977/9501 (Magna Carta for MSMEs); DTI P3 &amp; SB Corp program rules; BMBE Act (RA 9178)</p></div>
+  <div class="meta"><span class="tagc">Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="gst inverted-duty refund (rule 89(5)) calculator &amp; rfd-01 pack when inputs carry higher gst than the finished good, unutilised itc piles up as trapped cash. the rule 89(5) refund formula, with its recurring circular tweaks, is complex, so msmes either don&#39;t claim or get rejected. msmes in textiles, footwear, fertilizer, ev, utensils and other inverted-duty trades (inputs taxed higher than output) enter period turnover, tax rates, inward itc split (inputs vs input-services/capital goods) and adjusted total turnover; it computes maximum refund per the current rule 89(5) formula, shows the claimable amount, builds statement 1/1a and the rfd-01 support pack, and tracks claims filed vs sanctioned. cgst rule 89(5) (inverted duty structure); form rfd-01 / statement 1a" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-672</span>
+    <h3>GST Inverted-Duty Refund (Rule 89(5)) Calculator &amp; RFD-01 Pack</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> When inputs carry higher GST than the finished good, unutilised ITC piles up as trapped cash. The Rule 89(5) refund formula, with its recurring circular tweaks, is complex, so MSMEs either don't claim or get rejected.</p><p><b>Who it helps.</b> MSMEs in textiles, footwear, fertilizer, EV, utensils and other inverted-duty trades (inputs taxed higher than output)</p><p><b>What it does.</b> Enter period turnover, tax rates, inward ITC split (inputs vs input-services/capital goods) and adjusted total turnover; it computes Maximum Refund per the current Rule 89(5) formula, shows the claimable amount, builds Statement 1/1A and the RFD-01 support pack, and tracks claims filed vs sanctioned.</p><p><b>Regulation.</b> CGST Rule 89(5) (inverted duty structure); Form RFD-01 / Statement 1A</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="ph pawnshop (sangla) loan &amp; redemption manager pawnshops run a lending book on paper (pawn tickets, appraised collateral, accruing interest, grace periods, renewals, auction of unredeemed items), which is error-prone and hard to keep pd 114 / bsp compliant. neighbourhood pawnshop (sangla) owners and small lending-investor msmes issue each pawn ticket (item photo, appraisal, principal, rate, maturity + grace), accrue interest and penalties to date, handle renewals and partial payments, flag items past grace for auction, and keep the compliant register with daily cash position and the ticket&#39;s required disclosures. pd 114 (pawnshop regulation act); bsp mornbfi rules" data-tags="|flutter|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-673</span>
+    <h3>PH Pawnshop (Sangla) Loan &amp; Redemption Manager</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Pawnshops run a lending book on paper (pawn tickets, appraised collateral, accruing interest, grace periods, renewals, auction of unredeemed items), which is error-prone and hard to keep PD 114 / BSP compliant.</p><p><b>Who it helps.</b> Neighbourhood pawnshop (sangla) owners and small lending-investor MSMEs</p><p><b>What it does.</b> Issue each pawn ticket (item photo, appraisal, principal, rate, maturity + grace), accrue interest and penalties to date, handle renewals and partial payments, flag items past grace for auction, and keep the compliant register with daily cash position and the ticket's required disclosures.</p><p><b>Regulation.</b> PD 114 (Pawnshop Regulation Act); BSP MORNBFI rules</p></div>
+  <div class="meta"><span class="tagc">Philippines</span><span class="tagc">Flutter</span></div>
+</article>
+<article class="idea" data-idea data-text="upi autopay / e-nach recurring-collections manager recurring collections fail silently: mandates expire, get revoked, or debits bounce, and owners only notice when cash is short. tracking which mandate covers which customer, and retrying failures, is manual. msmes with recurring revenue (amc, subscriptions, emi, tuition, rent, saas) collecting via upi autopay/e-nach (in) or gcash/maya autopay (ph) a mandate register recording each customer&#39;s e-mandate/autopay (amount cap, frequency, validity, reference), a debit calendar, reconciliation of successful vs failed/returned debits against expected dues, and a retry plus re-mandate dunning ladder that issues a fresh pay-link on failure. npci upi autopay; rbi e-mandate framework (in); bsp e-money/autopay rules (ph)" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-674</span>
+    <h3>UPI AutoPay / e-NACH Recurring-Collections Manager</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> Recurring collections fail silently: mandates expire, get revoked, or debits bounce, and owners only notice when cash is short. Tracking which mandate covers which customer, and retrying failures, is manual.</p><p><b>Who it helps.</b> MSMEs with recurring revenue (AMC, subscriptions, EMI, tuition, rent, SaaS) collecting via UPI AutoPay/e-NACH (IN) or GCash/Maya AutoPay (PH)</p><p><b>What it does.</b> A mandate register recording each customer's e-mandate/AutoPay (amount cap, frequency, validity, reference), a debit calendar, reconciliation of successful vs failed/returned debits against expected dues, and a retry plus re-mandate dunning ladder that issues a fresh pay-link on failure.</p><p><b>Regulation.</b> NPCI UPI AutoPay; RBI e-Mandate framework (IN); BSP e-money/AutoPay rules (PH)</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="treds eligibility &amp; upload-pack builder msmes that could discount receivables on treds (rxil/m1xchange/invoicemart) don&#39;t know which buyer invoices qualify or how to prepare the data for onboarding. msme suppliers to large and psu buyers a checker: enter buyer type + invoice details to get an eligibility verdict (is the buyer onboarded, is the invoice acceptance-ready), plus a structured upload pack and an estimated cost of discounting. rbi treds framework; mandatory treds for buyers &gt;rs.250cr turnover; msmed act" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-208</span>
+    <h3>TReDS Eligibility &amp; Upload-Pack Builder</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSMEs that could discount receivables on TReDS (RXIL/M1xchange/Invoicemart) don't know which buyer invoices qualify or how to prepare the data for onboarding.</p><p><b>Who it helps.</b> MSME suppliers to large and PSU buyers</p><p><b>What it does.</b> A checker: enter buyer type + invoice details to get an eligibility verdict (is the buyer onboarded, is the invoice acceptance-ready), plus a structured upload pack and an estimated cost of discounting.</p><p><b>Regulation.</b> RBI TReDS framework; mandatory TReDS for buyers &gt;Rs.250cr turnover; MSMED Act</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="gst payment cash-reserve calendar msmes get blindsided by bunched gst, tds and advance-tax outflows because deadlines are known but the amounts are not planned for. gst-registered msmes enter a turnover pattern + filing frequency to get a calendar of gstr-3b, gstr-1, tds and advance-tax due dates with estimated amounts and a &#39;set aside this much&#39; running tracker. gst return calendar; tds; advance tax" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-218</span>
+    <h3>GST Payment Cash-Reserve Calendar</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSMEs get blindsided by bunched GST, TDS and advance-tax outflows because deadlines are known but the amounts are not planned for.</p><p><b>Who it helps.</b> GST-registered MSMEs</p><p><b>What it does.</b> Enter a turnover pattern + filing frequency to get a calendar of GSTR-3B, GSTR-1, TDS and advance-tax due dates with estimated amounts and a 'set aside this much' running tracker.</p><p><b>Regulation.</b> GST return calendar; TDS; advance tax</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="dti/sec + bir formalization checker ph micro-entrepreneurs who want to formalize (the gate to formal credit) don&#39;t know the dti-vs-sec + bir + barangay/mayor&#39;s-permit sequence. informal ph sellers going legit to access credit a wizard: business type + location returns the exact registration sequence, required documents, fees, timelines and which steps must precede the bir tin and books of account. dti (sole prop); sec (corp/partnership); bir; lgu/barangay permits" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-223</span>
+    <h3>DTI/SEC + BIR Formalization Checker</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> PH micro-entrepreneurs who want to formalize (the gate to formal credit) don't know the DTI-vs-SEC + BIR + barangay/mayor's-permit sequence.</p><p><b>Who it helps.</b> Informal PH sellers going legit to access credit</p><p><b>What it does.</b> A wizard: business type + location returns the exact registration sequence, required documents, fees, timelines and which steps must precede the BIR TIN and books of account.</p><p><b>Regulation.</b> DTI (sole prop); SEC (corp/partnership); BIR; LGU/barangay permits</p></div>
+  <div class="meta"><span class="tagc">Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+<article class="idea" data-idea data-text="field collections agent app msme lenders and distributors send agents to collect cash and digital payments in the field with no live tracking and manual end-of-day reconciliation. microfinance field officers and distributor collection agents a mobile app showing assigned accounts, recording cash/upi/gcash collection with a geotag and a digital receipt, syncing offline-first, and reconciling against assigned dues each day. rbi microfinance norms (in); bsp (ph); data privacy" data-tags="|flutter|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-224</span>
+    <h3>Field Collections Agent App</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSME lenders and distributors send agents to collect cash and digital payments in the field with no live tracking and manual end-of-day reconciliation.</p><p><b>Who it helps.</b> Microfinance field officers and distributor collection agents</p><p><b>What it does.</b> A mobile app showing assigned accounts, recording cash/UPI/GCash collection with a geotag and a digital receipt, syncing offline-first, and reconciling against assigned dues each day.</p><p><b>Regulation.</b> RBI microfinance norms (IN); BSP (PH); data privacy</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Flutter</span></div>
+</article>
+<article class="idea" data-idea data-text="export invoice lut &amp; fx realization tracker msme exporters juggle the gst lut (for zero-rated exports), fircs and fx realization timelines with no single view, risking lapsed luts and overdue realization. small exporters and freelancers billing foreign clients track each export invoice against lut validity, expected fx inflow and the fema realization deadline, convert at logged rates, and flag unrealized or overdue receipts. gst lut (zero-rated exports); fema export realization; rbi" data-tags="|go|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-482</span>
+    <h3>Export Invoice LUT &amp; FX Realization Tracker</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> MSME exporters juggle the GST LUT (for zero-rated exports), FIRCs and FX realization timelines with no single view, risking lapsed LUTs and overdue realization.</p><p><b>Who it helps.</b> Small exporters and freelancers billing foreign clients</p><p><b>What it does.</b> Track each export invoice against LUT validity, expected FX inflow and the FEMA realization deadline, convert at logged rates, and flag unrealized or overdue receipts.</p><p><b>Regulation.</b> GST LUT (zero-rated exports); FEMA export realization; RBI</p></div>
+  <div class="meta"><span class="tagc">India</span><span class="tagc">Go</span></div>
+</article>
+<article class="idea" data-idea data-text="payables triage (pay-this-week) when cash is tight, msmes pay whoever shouts loudest rather than optimally, triggering avoidable penalties and lost discounts. owner-operators in a cash crunch list payables with due dates, early-pay discounts, late penalties and supplier criticality; it returns a ranked &#39;pay this week&#39; list that minimizes penalty while preserving key suppliers. none specific" data-tags="|static|" data-sector="FIN">
+  <div class="head">
+    <span class="id">MSME-487</span>
+    <h3>Payables Triage (Pay-This-Week)</h3>
+    <span class="badge idea">Idea</span>
+  </div>
+  <div class="body"><p><b>Problem.</b> When cash is tight, MSMEs pay whoever shouts loudest rather than optimally, triggering avoidable penalties and lost discounts.</p><p><b>Who it helps.</b> Owner-operators in a cash crunch</p><p><b>What it does.</b> List payables with due dates, early-pay discounts, late penalties and supplier criticality; it returns a ranked 'pay this week' list that minimizes penalty while preserving key suppliers.</p><p><b>Regulation.</b> None specific</p></div>
+  <div class="meta"><span class="tagc">India + Philippines</span><span class="tagc">Static web app</span></div>
+</article>
+  </section>
+  <p class="empty" data-empty hidden>No tools match that search in this sector.</p>
+</div></main>
+<footer class="foot"><div class="wrap">
+  <span>Open MSME · open-source software for MSMEs in India &amp; the Philippines · MIT licensed</span>
+  <span><a href="../about.html">About</a> · <a href="../index.html">Catalog</a> · <a href="https://github.com/sreenivas-sadhu-prabhakara/openmsme" rel="noopener">Source</a></span>
+</div></footer>
+<script src="../assets/app.js"></script>
+</body>
+</html>

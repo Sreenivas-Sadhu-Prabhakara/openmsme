@@ -7,6 +7,7 @@
   "MSME-009": "compliant-food-label-studio",
   "MSME-010": "recipe-costing-plate-pricing",
   "MSME-011": "aggregator-payout-reconciler",
+  "MSME-012": "food-permit-license-renewal-tracker",
   "MSME-013": "whatsapp-catalog-order-book",
   "MSME-015": "bolikhata-voice-ledger",
   "MSME-016": "marginmate-landed-cost",
@@ -31,12 +32,17 @@
   "MSME-051": "pm-surya-ghar-solar-payback",
   "MSME-057": "digital-consignment-note-bilty-lr",
   "MSME-060": "commission-free-direct-booking-page",
+  "MSME-076": "gi-textile-authenticity-qr-passport",
   "MSME-601": "factory-electricity-bill-decoder-max",
+  "MSME-602": "sheet-metal-bend-deduction-flat",
   "MSME-607": "aql-finished-garment-inspection-logger",
   "MSME-608": "apparel-export-time-action-t",
   "MSME-642": "axle-load-overload-penalty-calculator",
   "MSME-643": "volumetric-weight-carton-cube-optimizer",
   "MSME-653": "epcg-advance-authorisation-export-obligation",
   "MSME-664": "rule-37-180-day-itc",
-  "MSME-675": "udin-register-attestation-guard"
+  "MSME-675": "udin-register-attestation-guard",
+  "MSME-676": "sec-reportorial-autopilot-gis-afs",
+  "MSME-692": "pcpndt-form-f-register-monthly",
+  "MSME-734": "boat-passenger-manifest-coast-guard"
 }

@@ -260,3 +260,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
 }
+
+/* Same fix for the catalog's per-sector accents: lighten only the small text. */
+[data-sector]{ --sector-text: var(--sector); }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) [data-sector]{ --sector-text: color-mix(in srgb, var(--sector) 50%, white); } }
+:root[data-theme="dark"] [data-sector]{ --sector-text: color-mix(in srgb, var(--sector) 50%, white); }
+.sector-card .code { color: var(--sector-text, var(--ink-3)); }
+.tagc.sect { color: var(--sector-text, var(--ink-2)); }
+.phead .code { color: var(--sector-text, var(--ink-3)); }

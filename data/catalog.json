@@ -124,18 +124,6 @@
    "firstWave": true
   },
   {
-   "id": "MSME-004",
-   "sector": "MFG",
-   "title": "43B(h) MSME Delayed-Payment Enforcer",
-   "market": "India",
-   "stack": "go",
-   "problem": "Buyers now legally must pay registered MSMEs within 45 days or lose the income-tax deduction (43B(h)), plus mandatory interest, but shops don't track the clock or use the leverage, so they keep absorbing delays.",
-   "who": "Udyam-registered micro/small job shops whose large buyers routinely pay in 90-120 days",
-   "solution": "Track each customer invoice against the 15/45-day MSMED clock, auto-send statutory reminders with accruing interest, and generate a ready-to-file MSME Samadhaan complaint pack when a buyer breaches.",
-   "regulation": "MSMED Act Sec 15/16, Income Tax Sec 43B(h), MSME Samadhaan, Udyam",
-   "firstWave": false
-  },
-  {
    "id": "MSME-006",
    "sector": "TEX",
    "title": "Textile Unit-Costing Calculator",
@@ -325,18 +313,6 @@
    "who": "VAT-registered SMEs and their bookkeepers.",
    "solution": "Map a simple sales/purchases CSV to the required fields and emit a validated, BIR-RELIEF-compliant .dat ready to submit.",
    "regulation": "VAT SLSP requirement; BIR RELIEF data format.",
-   "firstWave": false
-  },
-  {
-   "id": "MSME-030",
-   "sector": "FIN",
-   "title": "MSME 45-Day Payment Clock (Sec 43B(h))",
-   "market": "India",
-   "stack": "go",
-   "problem": "Under Income Tax Sec 43B(h) (effective FY2024-25) a buyer can only deduct a purchase from a registered micro/small supplier if it is paid within 45 days (15 if no written agreement). MSMEs don't know which invoices give them this statutory leverage, and buyers don't track exposure.",
-   "who": "Udyam-registered micro/small suppliers and their accountants",
-   "solution": "Upload the invoice register + Udyam status; the tool runs the 45/15-day clock per invoice, flags invoices about to trip the buyer's deduction, and auto-drafts a buyer-facing nudge citing 43B(h) plus the MSMED Act compound interest (3x bank rate).",
-   "regulation": "Income Tax 43B(h); MSMED Act 2006 Sec 15/16; Udyam",
    "firstWave": false
   },
   {
@@ -4504,6 +4480,18 @@
    "firstWave": false
   },
   {
+   "id": "MSME-756",
+   "sector": "MFG",
+   "title": "Foundry Charge-Mix & Ladle-Addition Optimizer",
+   "market": "India + Philippines",
+   "stack": "static",
+   "problem": "Hitting target chemistry (C, Si, Mn, S, P, Cu, Cr) while minimizing cost means balancing pig iron, returns, steel scrap and ferroalloys, then correcting the ladle after the spectrometer reading. Done by gut it wastes costly ferroalloys and produces off-spec heats and rejections.",
+   "who": "Grey/ductile iron and non-ferrous foundries and small melting units that make up the furnace charge by habit.",
+   "solution": "Enter target chemistry and the price and analysis of each available charge material; a least-cost solver returns the charge recipe that meets every element within range; then, after the pre-tap spectro reading, it computes the exact ladle additions (FeSi, FeMn, recarburizer) to correct to aim with melt-loss factors. Recipes save per grade.",
+   "regulation": null,
+   "firstWave": false
+  },
+  {
    "id": "MSME-134",
    "sector": "AGRI",
    "title": "FPO Patronage Bonus Calculator",
@@ -4957,6 +4945,18 @@
    "who": "Primary-care clinics, clinical laboratories and ambulatory facilities applying for or renewing a DOH LTO",
    "solution": "A requirement-by-requirement self-assessment for the facility type (clinical lab primary/secondary/tertiary, primary-care clinic) that scores readiness, lists the exact personnel, equipment and document gaps, holds evidence (PRC licences, calibration, floor plan) in a vault, and produces the compliance checklist to walk the DOH assessor through.",
    "regulation": "DOH Licensing (AO on Clinical Laboratories; One-Stop-Shop LTO technical requirements)",
+   "firstWave": false
+  },
+  {
+   "id": "MSME-755",
+   "sector": "FIN",
+   "title": "GST TCS (Sec 52) / GSTR-8 Marketplace-Credit Reconciler",
+   "market": "India",
+   "stack": "go",
+   "problem": "Marketplaces collect 0.5% + 0.5% TCS on your supplies and file GSTR-8; that TCS is cash sitting in your electronic cash ledger that you must reconcile and claim. Sellers across multiple platforms lose track and leave credit stranded.",
+   "who": "MSMEs selling on Amazon, Flipkart, Meesho, ONDC and other e-commerce operators",
+   "solution": "Import each operator's TCS/settlement report plus your GSTR-8 auto-populated data; it reconciles platform-collected TCS against your reported sales, flags mismatches and missing credits, totals the claimable cash-ledger balance, and produces a month-wise claim summary.",
+   "regulation": "CGST Sec 52 (TCS on e-commerce); GSTR-8",
    "firstWave": false
   },
   {
